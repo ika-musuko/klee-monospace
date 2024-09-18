@@ -137,8 +137,9 @@ The Enum.reduce function receives the enumerable list to work with, and for ever
         f.write(html)
 
 
-def make_font_monospace(input_path: str, output_path: str):
+def make_font_monospace(input_path, lxgw_path, output_path):
     font = TTFont(input_path)
+    lxgw = TTFont(lxgw_path)
 
     #####
     print("get resources")
@@ -147,6 +148,14 @@ def make_font_monospace(input_path: str, output_path: str):
     glyf = font["glyf"]
     name = font["name"]
     gsub = font["GSUB"].table
+
+    lxgw_glyf = lxgw["glyf"]
+
+    ####
+    print("lxgw swap")
+    to_swap = ("j", "J", "i", "I", "l")
+    for gl in to_swap:
+        glyf[gl] = lxgw_glyf[gl]
 
     #####
     print("set general font metrics")
@@ -230,18 +239,16 @@ def make_font_monospace(input_path: str, output_path: str):
     hmtx[gl] = (rw, 60)
 
     gl = "I"
-    hmtx[gl] = (rw, 250)
+    hmtx[gl] = (rw, 60)
 
     gl = "i"
-    hmtx[gl] = (rw, 200)
+    hmtx[gl] = (rw, 60)
 
     gl = "J"
     glyf[gl].coordinates.scale((1.2, 1))
     hmtx[gl] = (rw, 10)
 
     gl = "j"
-    glyf[gl].coordinates.scale((1.4, 1))
-    hmtx[gl] = (rw, 60)
 
     gl = "k"
     glyf[gl].coordinates.scale((1.05, 1))
@@ -251,7 +258,7 @@ def make_font_monospace(input_path: str, output_path: str):
     hmtx[gl] = (rw, 50)
 
     gl = "l"
-    hmtx[gl] = (rw, 200)
+    hmtx[gl] = (rw, 20)
 
     gl = "M"
     glyf[gl].coordinates.scale((0.75, 1))
@@ -339,6 +346,9 @@ def make_font_monospace(input_path: str, output_path: str):
 
     gl = "four"
     glyf[gl].coordinates.scale((0.95, 1))
+
+    gl = "five"
+    glyf[gl].coordinates.scale((0.9, 1))
 
     gl = "eight"
     glyf[gl].coordinates.scale((0.98, 1))
@@ -463,6 +473,7 @@ def make_font_monospace(input_path: str, output_path: str):
 
 if __name__ == "__main__":
     input_path = sys.argv[1]
+    lxgw_path = sys.argv[2]
 
     font_filename = os.path.basename(input_path)
     font_name, variant_ext = font_filename.split("-")
@@ -470,5 +481,5 @@ if __name__ == "__main__":
 
     print(output_path)
 
-    make_font_monospace(input_path, output_path)
+    make_font_monospace(input_path, lxgw_path, output_path)
     create_html_demo(output_path)
