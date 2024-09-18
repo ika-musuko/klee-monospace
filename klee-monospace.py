@@ -149,13 +149,16 @@ def make_font_monospace(input_path, lxgw_path, output_path):
     name = font["name"]
     gsub = font["GSUB"].table
 
+    lxgw_hmtx = lxgw["hmtx"].metrics
     lxgw_glyf = lxgw["glyf"]
 
     ####
     print("lxgw swap")
-    to_swap = ("j", "J", "i", "I", "l")
-    for gl in to_swap:
-        glyf[gl] = lxgw_glyf[gl]
+
+    #for gl in to_swap:
+    for gl in lxgw_glyf.keys():
+        if gl[:3] != "uni" and gl in glyf:
+            glyf[gl] = lxgw_glyf[gl]
 
     #####
     print("set general font metrics")
@@ -165,286 +168,55 @@ def make_font_monospace(input_path, lxgw_path, output_path):
     jw = 1000 # japanese character width
     for gl, (width, lsb) in hmtx.items():
         if gl[:3] != "uni":
-            hmtx[gl] = (rw, 0)
+            hmtx[gl] = (rw, lsb)
         else:
             hmtx[gl] = (jw, lsb)
 
     #####
     print("specific letter customizations")
 
-    # remove letter combo ligatures
+    ## remove letter combo ligatures (fi, fl, etc)
     lookups = gsub.LookupList.Lookup
     ligature_subst = next(lookups[16].iterSubTables()).value
     ligatures = ligature_subst.ligatures
     ligatures.pop('f')
 
-    # uppercase letters
-    for ch in range(65, 91):
-        gl = chr(ch)
-        glyf[gl].coordinates.scale((0.84, 1))
-
-    # lowercase letters
-    for ch in range(97, 123):
-        gl = chr(ch)
-        glyf[gl].coordinates.scale((0.95, 1))
-
     gl = "A"
-    glyf[gl].coordinates.scale((0.8, 1))
-    hmtx[gl] = (rw, -5)
-
-    gl = "a"
-    hmtx[gl] = (rw, 10)
-
-    gl = "b"
-    hmtx[gl] = (rw, 50)
-
-    gl = "C"
-    glyf[gl].coordinates.scale((0.8, 1))
-
-    gl = "c"
-    hmtx[gl] = (rw, 20)
-
-    gl = "D"
-    glyf[gl].coordinates.scale((0.9, 1))
-
-    gl = "d"
-    glyf[gl].coordinates.scale((0.95, 1))
-    hmtx[gl] = (rw, 10)
-
-    gl = "E"
-    glyf[gl].coordinates.scale((1, 1))
-
-    gl = "e"
-    hmtx[gl] = (rw, 10)
-
-    gl = "F"
-    glyf[gl].coordinates.scale((1.1, 1))
-
-    gl = "f"
-    glyf[gl].coordinates.scale((1.3, 1))
-    hmtx[gl] = (rw, 40)
-
-    gl = "G"
-    glyf[gl].coordinates.scale((0.80, 1))
-    hmtx[gl] = (rw, -2)
-
-    gl = "g"
-    hmtx[gl] = (rw, 10)
-
-    gl = "H"
-    glyf[gl].coordinates.scale((0.95, 1))
-    hmtx[gl] = (rw, -40)
-
-    gl = "h"
-    hmtx[gl] = (rw, 60)
-
-    gl = "I"
-    hmtx[gl] = (rw, 60)
-
-    gl = "i"
-    hmtx[gl] = (rw, 60)
-
-    gl = "J"
-    glyf[gl].coordinates.scale((1.2, 1))
-    hmtx[gl] = (rw, 10)
-
-    gl = "j"
-
-    gl = "k"
-    glyf[gl].coordinates.scale((1.05, 1))
-    hmtx[gl] = (rw, 20)
-
-    gl = "L"
-    hmtx[gl] = (rw, 50)
-
-    gl = "l"
-    hmtx[gl] = (rw, 20)
-
-    gl = "M"
-    glyf[gl].coordinates.scale((0.75, 1))
-
-    gl = "M"
-    glyf[gl].coordinates.scale((0.9, 1))
-
-    gl = "m"
-    glyf[gl].coordinates.scale((0.70, 1))
     hmtx[gl] = (rw, 30)
 
-    gl = "N"
-    glyf[gl].coordinates.scale((0.9, 1))
-
-    gl = "n"
-    glyf[gl].coordinates.scale((0.95, 1))
-    hmtx[gl] = (rw, 50)
-
-    gl = "O"
-    glyf[gl].coordinates.scale((0.8, 1))
-
-    gl = "o"
-
-    gl = "p"
-    hmtx[gl] = (rw, 10)
-
-    gl = "Q"
-    glyf[gl].coordinates.scale((0.8, 1))
-
-    gl = "q"
-    hmtx[gl] = (rw, -2)
-
-    gl = "R"
-    glyf[gl].coordinates.scale((0.90, 1))
-    hmtx[gl] = (rw, -3)
-
-    gl = "r"
-    glyf[gl].coordinates.scale((1.2, 1))
+    gl = "l"
     hmtx[gl] = (rw, 40)
 
-    gl = "S"
-    glyf[gl].coordinates.scale((0.9, 1))
-
-    gl = "s"
-    hmtx[gl] = (rw, 20)
-
-    gl = "T"
-    glyf[gl].coordinates.scale((0.9, 1))
-
-    gl = "t"
-    glyf[gl].coordinates.scale((1.2, 1))
-    hmtx[gl] = (rw, 50)
-
-    gl = "U"
-    glyf[gl].coordinates.scale((0.95, 1))
-    hmtx[gl] = (rw, 20)
-
-    gl = "u"
-    glyf[gl].coordinates.scale((0.95, 1))
-    hmtx[gl] = (rw, 20)
-
-    gl = "V"
-    glyf[gl].coordinates.scale((0.9, 1))
-
-    gl = "W"
-    glyf[gl].coordinates.scale((0.62, 1))
-
-    gl = "w"
-    glyf[gl].coordinates.scale((0.70, 1))
-
-    gl = "X"
-    glyf[gl].coordinates.scale((0.9, 1))
-
-    gl = "x"
-    hmtx[gl] = (rw, 50)
-
-    gl = "y"
-    hmtx[gl] = (rw, 50)
-
-    gl = "z"
-    hmtx[gl] = (rw, 50)
-
-    gl = "asciitilde"
-    glyf[gl].coordinates.scale((0.85, 1))
-
-    gl = "four"
-    glyf[gl].coordinates.scale((0.95, 1))
-
-    gl = "five"
-    glyf[gl].coordinates.scale((0.9, 1))
-
-    gl = "eight"
-    glyf[gl].coordinates.scale((0.98, 1))
-
-    gl = "nine"
-    glyf[gl].coordinates.scale((0.95, 1))
+    gl = "m"
+    hmtx[gl] = (rw, 35)
 
     gl = "parenleft"
-    glyf[gl].coordinates.scale((1.2, 1))
-    hmtx[gl] = (rw, 80)
+    hmtx[gl] = (rw, 140)
 
     gl = "parenright"
-    glyf[gl].coordinates.scale((1.2, 1))
-    hmtx[gl] = (rw, 80)
-
-    gl = "braceleft"
-    glyf[gl].coordinates.scale((1.4, 1))
-
-    gl = "braceright"
-    glyf[gl].coordinates.scale((1.4, 1))
     hmtx[gl] = (rw, 100)
 
-    gl = "bracketleft"
-    glyf[gl].coordinates.scale((1.4, 1))
+    gl = "braceright"
     hmtx[gl] = (rw, 100)
 
     gl = "bracketright"
     glyf[gl].coordinates.scale((1.4, 1))
     hmtx[gl] = (rw, 100)
 
-    gl = "underscore"
-    glyf[gl].coordinates.scale((0.8, 1))
-
-    gl = "at"
-    glyf[gl].coordinates.scale((0.6, 0.7))
-    glyf[gl].coordinates.translate((0, 100))
-
-    gl = "numbersign"
-    glyf[gl].coordinates.scale((0.9, 1))
-
-    gl = "dollar"
-    glyf[gl].coordinates.scale((0.9, 0.9))
-    glyf[gl].coordinates.translate((0, 30))
-
-    gl = "percent"
-    glyf[gl].coordinates.scale((0.68, 1))
-
-    gl = "ampersand"
-    glyf[gl].coordinates.scale((0.72, 0.9))
-    glyf[gl].coordinates.translate((0, 40))
-
-    gl = "asterisk"
-    hmtx[gl] = (rw, 70)
-
-    gl = "hyphen"
-    hmtx[gl] = (rw, 70)
-
-    gl = "equal"
-    glyf[gl].coordinates.scale((0.95, 1))
-
-    gl = "period"
-    hmtx[gl] = (rw, 170)
-
-    gl = "comma"
-    hmtx[gl] = (rw, 170)
-
-    gl = "bar"
-    hmtx[gl] = (rw, 170)
-
-    gl = "exclam"
-    hmtx[gl] = (rw, 170)
+    gl = "question"
+    hmtx[gl] = (rw, -30)
 
     gl = "colon"
-    hmtx[gl] = (rw, 170)
+    hmtx[gl] = (rw, 180)
 
     gl = "semicolon"
-    hmtx[gl] = (rw, 170)
-
-    gl = "quotesingle"
-    hmtx[gl] = (rw, 170)
-
-    gl = "quotedbl"
-    hmtx[gl] = (rw, 130)
+    hmtx[gl] = (rw, 50)
 
     gl = "less"
-    hmtx[gl] = (rw, 20)
+    hmtx[gl] = (rw, -10)
 
     gl = "greater"
-    hmtx[gl] = (rw, 20)
-
-    gl = "slash"
-    hmtx[gl] = (rw, 70)
-
-    gl = "backslash"
-    hmtx[gl] = (rw, 70)
-
+    hmtx[gl] = (rw, -10)
 
     ####
     print("set namerecords")
@@ -468,7 +240,6 @@ def make_font_monospace(input_path, lxgw_path, output_path):
     #####
     print("save font")
     font.save(output_path)
-
 
 
 if __name__ == "__main__":
