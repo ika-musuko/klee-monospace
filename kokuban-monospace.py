@@ -223,6 +223,9 @@ def make_font_monospace(input_path, lxgw_path, output_path):
     gl = "greater"
     hmtx[gl] = (rw, -10)
 
+    gl = "degree"
+    hmtx[gl] = (rw, 250)
+
 
     ####
     print("set namerecords")
