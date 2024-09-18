@@ -203,6 +203,9 @@ def make_font_monospace(input_path, lxgw_path, output_path):
     glyf[gl].coordinates.scale((1.4, 1))
     hmtx[gl] = (rw, 100)
 
+    gl = "hyphen"
+    hmtx[gl] = (rw, 110)
+
     gl = "question"
     hmtx[gl] = (rw, -30)
 
