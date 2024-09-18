@@ -137,9 +137,6 @@ The Enum.reduce function receives the enumerable list to work with, and for ever
         f.write(html)
 
 
-
-
-
 def make_font_monospace(input_path: str, output_path: str):
     font = TTFont(input_path)
 
@@ -149,7 +146,7 @@ def make_font_monospace(input_path: str, output_path: str):
     post = font["post"]
     glyf = font["glyf"]
     name = font["name"]
-    gsub = font["GSUB"]
+    gsub = font["GSUB"].table
 
     #####
     print("set general font metrics")
@@ -165,8 +162,10 @@ def make_font_monospace(input_path: str, output_path: str):
     print("specific letter customizations")
 
     # remove letter combo ligatures
-    print(gsub)
-    print(gsub.__dict__)
+    lookups = gsub.LookupList.Lookup
+    ligature_subst = next(lookups[16].iterSubTables()).value
+    ligatures = ligature_subst.ligatures
+    ligatures.pop('f')
 
     # uppercase letters
     for ch in range(65, 91):
