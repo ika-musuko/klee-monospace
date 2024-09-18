@@ -12,10 +12,10 @@
 ## [kitty](https://github.com/kovidgoyal/kitty)のおすすめの設定
 ```
 font_family KleeOneMonospace
-font_size 18
+font_size 16
 
 modify_font cell_width 100%
 modify_font cell_height 80%
 modify_font baseline 5
-text_composition_strategy 3.0 40 # こちらがディスプレイによって要調整
+text_composition_strategy 3.0 10 # こちらがディスプレイによって要調整
 ```
