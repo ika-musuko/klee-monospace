@@ -1,4 +1,5 @@
 等幅Klee Oneフォント
+![screenshot of the font](screenshot.png)
 
 ## パッチする方法
 1. 前提として[`fonttools`](https://github.com/fonttools/fonttools)をインストールする
