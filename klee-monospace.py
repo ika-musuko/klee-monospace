@@ -79,25 +79,28 @@ def create_html_demo(input_path: str):
 abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
 あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん
 アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン
-abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz 
+abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
 漢字勉強日本東京大阪学校先生生徒自然雨空海山木花家車電車飛行機時間お金水火風美術音楽仕事努力成功失敗機会経験友達家族動物食べ物飲み物本読書書道歴史世界社会環境健康
-ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ 
+ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ
        </p>
        <p class="boxed-text">
 abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
 あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん
 アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン
-abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz 
+abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
 漢字勉強日本東京大阪学校先生生徒自然雨空海山木花家車電車飛行機時間お金水火風美術音楽仕事努力成功失敗機会経験友達家族動物食べ物飲み物本読書書道歴史世界社会環境健康
-1234567890!@#$%^&*(),./;'[]-=<>?:"{{}}_+\\|1234567890!@#$%^&*(),./;'[]-=<>?:"{{}}_+\\|1234567890!@#$%^&*(),./;'[]-=<>?:"{{}}_+\\|1234567890!@#$%^&*(),./;'[]-=<>?:"{{}}_+\\|
-ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ 
+`~1234567890!@#$%^&*(),./;'[]-=<>?:"{{}}_+\\|1234567890!@#$%^&*(),./;'[]-=<>?:"{{}}_+\\|1234567890!@#$%^&*(),./;'[]-=<>?:"{{}}_+\\|1234567890!@#$%^&*(),./;'[]-=<>?:"{{}}_+\\|
+ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ
+           AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCbcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
        </p>
        <p>fifififififlflflflflflflflfififififi. field flop floor fire</p>
        <p>
-           abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz 
-           ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ 
-           AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCbcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz 
-            
+           abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+           ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ
+           `~1234567890!@#$%^&*(),./;'[]-=<>?:"{{}}_+\\|1234567890!@#$%^&*(),./;'[]-=<>?:"{{}}_+\\|1234567890!@#$%^&*(),./;'[]-=<>?:"{{}}_+\\|1234567890!@#$%^&*(),./;'[]-=<>?:"{{}}_+\\|
+ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ
+           AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCbcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+
             多くのプログラミング言語で見られる最初のオプションは、空のリストが与えられた場合に例外を発生させることです。Elixirでの実装は次のようになります。
             $ list(a) -> a
             def head([head | _]), do: head
@@ -180,14 +183,13 @@ def make_font_monospace(input_path: str, output_path: str):
     hmtx[gl] = (rw, -5)
 
     gl = "a"
-    glyf[gl].coordinates.scale((1.05, 1))
-    hmtx[gl] = (rw, -5)
+    hmtx[gl] = (rw, 10)
 
     gl = "b"
     hmtx[gl] = (rw, 50)
 
     gl = "C"
-    glyf[gl].coordinates.scale((0.9, 1))
+    glyf[gl].coordinates.scale((0.8, 1))
 
     gl = "c"
     hmtx[gl] = (rw, 20)
@@ -196,13 +198,14 @@ def make_font_monospace(input_path: str, output_path: str):
     glyf[gl].coordinates.scale((0.9, 1))
 
     gl = "d"
-    hmtx[gl] = (rw, -10)
+    glyf[gl].coordinates.scale((0.95, 1))
+    hmtx[gl] = (rw, 10)
 
     gl = "E"
-    glyf[gl].coordinates.scale((1.05, 1))
+    glyf[gl].coordinates.scale((1, 1))
 
     gl = "e"
-    hmtx[gl] = (rw, 20)
+    hmtx[gl] = (rw, 10)
 
     gl = "F"
     glyf[gl].coordinates.scale((1.1, 1))
@@ -216,11 +219,11 @@ def make_font_monospace(input_path: str, output_path: str):
     hmtx[gl] = (rw, -2)
 
     gl = "g"
-    hmtx[gl] = (rw, -5)
+    hmtx[gl] = (rw, 10)
 
     gl = "H"
     glyf[gl].coordinates.scale((0.95, 1))
-    hmtx[gl] = (rw, -10)
+    hmtx[gl] = (rw, -40)
 
     gl = "h"
     hmtx[gl] = (rw, 60)
@@ -232,11 +235,12 @@ def make_font_monospace(input_path: str, output_path: str):
     hmtx[gl] = (rw, 200)
 
     gl = "J"
-    hmtx[gl] = (rw, 50)
+    glyf[gl].coordinates.scale((1.2, 1))
+    hmtx[gl] = (rw, 10)
 
     gl = "j"
-    glyf[gl].coordinates.scale((1.2, 1))
-    hmtx[gl] = (rw, 120)
+    glyf[gl].coordinates.scale((1.4, 1))
+    hmtx[gl] = (rw, 60)
 
     gl = "k"
     glyf[gl].coordinates.scale((1.05, 1))
@@ -250,17 +254,16 @@ def make_font_monospace(input_path: str, output_path: str):
 
     gl = "M"
     glyf[gl].coordinates.scale((0.75, 1))
-    hmtx[gl] = (rw, -1)
 
     gl = "M"
     glyf[gl].coordinates.scale((0.9, 1))
 
     gl = "m"
-    glyf[gl].coordinates.scale((0.75, 1))
-    hmtx[gl] = (rw, -1)
+    glyf[gl].coordinates.scale((0.70, 1))
+    hmtx[gl] = (rw, 30)
 
     gl = "N"
-    glyf[gl].coordinates.scale((0.95, 1))
+    glyf[gl].coordinates.scale((0.9, 1))
 
     gl = "n"
     glyf[gl].coordinates.scale((0.95, 1))
@@ -272,22 +275,30 @@ def make_font_monospace(input_path: str, output_path: str):
     gl = "o"
 
     gl = "p"
+    hmtx[gl] = (rw, 10)
 
     gl = "Q"
     glyf[gl].coordinates.scale((0.8, 1))
 
     gl = "q"
-    hmtx[gl] = (rw, -5)
+    hmtx[gl] = (rw, -2)
 
     gl = "R"
-    glyf[gl].coordinates.scale((0.97, 1))
+    glyf[gl].coordinates.scale((0.90, 1))
     hmtx[gl] = (rw, -3)
 
     gl = "r"
-    hmtx[gl] = (rw, 90)
+    glyf[gl].coordinates.scale((1.2, 1))
+    hmtx[gl] = (rw, 40)
+
+    gl = "S"
+    glyf[gl].coordinates.scale((0.9, 1))
 
     gl = "s"
     hmtx[gl] = (rw, 20)
+
+    gl = "T"
+    glyf[gl].coordinates.scale((0.9, 1))
 
     gl = "t"
     glyf[gl].coordinates.scale((1.2, 1))
@@ -305,7 +316,7 @@ def make_font_monospace(input_path: str, output_path: str):
     glyf[gl].coordinates.scale((0.9, 1))
 
     gl = "W"
-    glyf[gl].coordinates.scale((0.7, 1))
+    glyf[gl].coordinates.scale((0.62, 1))
 
     gl = "w"
     glyf[gl].coordinates.scale((0.70, 1))
@@ -322,12 +333,24 @@ def make_font_monospace(input_path: str, output_path: str):
     gl = "z"
     hmtx[gl] = (rw, 50)
 
+    gl = "asciitilde"
+    glyf[gl].coordinates.scale((0.85, 1))
+
+    gl = "four"
+    glyf[gl].coordinates.scale((0.95, 1))
+
+    gl = "eight"
+    glyf[gl].coordinates.scale((0.98, 1))
+
+    gl = "nine"
+    glyf[gl].coordinates.scale((0.95, 1))
+
     gl = "parenleft"
-    glyf[gl].coordinates.scale((1.4, 1))
-    hmtx[gl] = (rw, 30)
+    glyf[gl].coordinates.scale((1.2, 1))
+    hmtx[gl] = (rw, 80)
 
     gl = "parenright"
-    glyf[gl].coordinates.scale((1.4, 1))
+    glyf[gl].coordinates.scale((1.2, 1))
     hmtx[gl] = (rw, 80)
 
     gl = "braceleft"
@@ -346,12 +369,45 @@ def make_font_monospace(input_path: str, output_path: str):
     hmtx[gl] = (rw, 100)
 
     gl = "underscore"
-    glyf[gl].coordinates.scale((0.7, 1))
+    glyf[gl].coordinates.scale((0.8, 1))
+
+    gl = "at"
+    glyf[gl].coordinates.scale((0.6, 0.7))
+    glyf[gl].coordinates.translate((0, 100))
+
+    gl = "numbersign"
+    glyf[gl].coordinates.scale((0.9, 1))
+
+    gl = "dollar"
+    glyf[gl].coordinates.scale((0.9, 0.9))
+    glyf[gl].coordinates.translate((0, 30))
+
+    gl = "percent"
+    glyf[gl].coordinates.scale((0.68, 1))
+
+    gl = "ampersand"
+    glyf[gl].coordinates.scale((0.72, 0.9))
+    glyf[gl].coordinates.translate((0, 40))
+
+    gl = "asterisk"
+    hmtx[gl] = (rw, 70)
+
+    gl = "hyphen"
+    hmtx[gl] = (rw, 70)
+
+    gl = "equal"
+    glyf[gl].coordinates.scale((0.95, 1))
 
     gl = "period"
     hmtx[gl] = (rw, 170)
 
     gl = "comma"
+    hmtx[gl] = (rw, 170)
+
+    gl = "bar"
+    hmtx[gl] = (rw, 170)
+
+    gl = "exclam"
     hmtx[gl] = (rw, 170)
 
     gl = "colon"
@@ -364,9 +420,18 @@ def make_font_monospace(input_path: str, output_path: str):
     hmtx[gl] = (rw, 170)
 
     gl = "quotedbl"
-    hmtx[gl] = (rw, 170)
+    hmtx[gl] = (rw, 130)
+
+    gl = "less"
+    hmtx[gl] = (rw, 20)
+
+    gl = "greater"
+    hmtx[gl] = (rw, 20)
 
     gl = "slash"
+    hmtx[gl] = (rw, 70)
+
+    gl = "backslash"
     hmtx[gl] = (rw, 70)
 
 
