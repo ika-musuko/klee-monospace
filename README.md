@@ -1,4 +1,5 @@
-等幅Klee Oneフォント
+日本語のプログラミングフォント
+<br>
 ![screenshot of the font](screenshot.png)
 
 ## パッチする方法
