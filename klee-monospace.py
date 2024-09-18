@@ -150,8 +150,10 @@ def make_font_monospace(input_path: str, output_path: str):
 
     #####
     print("set general font metrics")
-    rw = 500
-    jw = 1000
+
+    # make monospace
+    rw = 500 # roman character width
+    jw = 1000 # japanese character width
     for gl, (width, lsb) in hmtx.items():
         if gl[:3] != "uni":
             hmtx[gl] = (rw, 0)
