@@ -175,6 +175,10 @@ def make_font_monospace(input_path: str, output_path: str):
         gl = chr(ch)
         glyf[gl].coordinates.scale((0.95, 1))
 
+    gl = "A"
+    glyf[gl].coordinates.scale((0.8, 1))
+    hmtx[gl] = (rw, -5)
+
     gl = "a"
     glyf[gl].coordinates.scale((1.05, 1))
     hmtx[gl] = (rw, -5)
@@ -192,14 +196,12 @@ def make_font_monospace(input_path: str, output_path: str):
     glyf[gl].coordinates.scale((0.9, 1))
 
     gl = "d"
-    glyf[gl].coordinates.scale((1.1, 1))
     hmtx[gl] = (rw, -10)
 
     gl = "E"
     glyf[gl].coordinates.scale((1.05, 1))
 
     gl = "e"
-    glyf[gl].coordinates.scale((1.1, 1))
     hmtx[gl] = (rw, 20)
 
     gl = "F"
@@ -210,14 +212,14 @@ def make_font_monospace(input_path: str, output_path: str):
     hmtx[gl] = (rw, 40)
 
     gl = "G"
-    glyf[gl].coordinates.scale((0.85, 1))
+    glyf[gl].coordinates.scale((0.80, 1))
     hmtx[gl] = (rw, -2)
 
     gl = "g"
-    glyf[gl].coordinates.scale((1.1, 1))
     hmtx[gl] = (rw, -5)
 
     gl = "H"
+    glyf[gl].coordinates.scale((0.95, 1))
     hmtx[gl] = (rw, -10)
 
     gl = "h"
@@ -240,6 +242,9 @@ def make_font_monospace(input_path: str, output_path: str):
     glyf[gl].coordinates.scale((1.05, 1))
     hmtx[gl] = (rw, 20)
 
+    gl = "L"
+    hmtx[gl] = (rw, 50)
+
     gl = "l"
     hmtx[gl] = (rw, 200)
 
@@ -247,29 +252,36 @@ def make_font_monospace(input_path: str, output_path: str):
     glyf[gl].coordinates.scale((0.75, 1))
     hmtx[gl] = (rw, -1)
 
+    gl = "M"
+    glyf[gl].coordinates.scale((0.9, 1))
+
     gl = "m"
     glyf[gl].coordinates.scale((0.75, 1))
     hmtx[gl] = (rw, -1)
 
     gl = "N"
-    hmtx[gl] = (rw, -1)
+    glyf[gl].coordinates.scale((0.95, 1))
 
     gl = "n"
     glyf[gl].coordinates.scale((0.95, 1))
     hmtx[gl] = (rw, 50)
 
     gl = "O"
-    glyf[gl].coordinates.scale((0.9, 1))
+    glyf[gl].coordinates.scale((0.8, 1))
 
     gl = "o"
 
     gl = "p"
 
     gl = "Q"
-    glyf[gl].coordinates.scale((0.9, 1))
+    glyf[gl].coordinates.scale((0.8, 1))
 
     gl = "q"
     hmtx[gl] = (rw, -5)
+
+    gl = "R"
+    glyf[gl].coordinates.scale((0.97, 1))
+    hmtx[gl] = (rw, -3)
 
     gl = "r"
     hmtx[gl] = (rw, 90)
@@ -281,15 +293,25 @@ def make_font_monospace(input_path: str, output_path: str):
     glyf[gl].coordinates.scale((1.2, 1))
     hmtx[gl] = (rw, 50)
 
+    gl = "U"
+    glyf[gl].coordinates.scale((0.95, 1))
+    hmtx[gl] = (rw, 20)
+
     gl = "u"
     glyf[gl].coordinates.scale((0.95, 1))
     hmtx[gl] = (rw, 20)
 
+    gl = "V"
+    glyf[gl].coordinates.scale((0.9, 1))
+
     gl = "W"
-    glyf[gl].coordinates.scale((0.8, 1))
+    glyf[gl].coordinates.scale((0.7, 1))
 
     gl = "w"
     glyf[gl].coordinates.scale((0.70, 1))
+
+    gl = "X"
+    glyf[gl].coordinates.scale((0.9, 1))
 
     gl = "x"
     hmtx[gl] = (rw, 50)
