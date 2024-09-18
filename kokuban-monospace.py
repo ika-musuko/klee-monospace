@@ -6,6 +6,8 @@ import sys
 
 from fontTools.ttLib import TTFont
 
+FONT_NAME = "KokubanMonospace"
+
 def random_letters(n):
     return ''.join(choice('abcdefghijklmnopqrstuvwxyz') for _ in range(n))
 
@@ -221,9 +223,11 @@ def make_font_monospace(input_path, lxgw_path, output_path):
     gl = "greater"
     hmtx[gl] = (rw, -10)
 
+
     ####
     print("set namerecords")
-    font_name, variant_ext = output_path.split("-")
+    original_font_name, variant_ext = output_path.split("-")
+    font_name = FONT_NAME
     variant, ext = variant_ext.split(".")
 
     print(font_name)
@@ -250,8 +254,9 @@ if __name__ == "__main__":
     lxgw_path = sys.argv[2]
 
     font_filename = os.path.basename(input_path)
-    font_name, variant_ext = font_filename.split("-")
-    output_path = f"{font_name}Monospace-{variant_ext}"
+    original_font_name, variant_ext = font_filename.split("-")
+    font_name = FONT_NAME
+    output_path = f"{font_name}-{variant_ext}"
 
     print(output_path)
 

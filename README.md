@@ -1,6 +1,6 @@
 Japanese programming font<br>
 日本語のプログラミングフォント<br>
-Download from [Releases](https://github.com/ika-musuko/klee-monospace/releases)
+Download from [Releases](https://github.com/ika-musuko/kokuban-monospace/releases)
 <br>
 ![screenshot of the font](screenshot.png)
 
@@ -13,12 +13,12 @@ Download from [Releases](https://github.com/ika-musuko/klee-monospace/releases)
     - KleeOne-SemiBold.ttf
     - LXGWWenKaiMono-Regular.ttf
     - LXGWWenKaiMono-Bold.ttf
-5. `python klee-monospace.py KleeOne-Regular.ttf LXGWWenKaiMono-Regular.ttf; python klee-monospace.py KleeOne-SemiBold.ttf LXGWWenKaiMono-Bold.ttf`
+5. `python kokuban-monospace.py KleeOne-Regular.ttf LXGWWenKaiMono-Regular.ttf; python kokuban-monospace.py KleeOne-SemiBold.ttf LXGWWenKaiMono-Bold.ttf`
 6. Open `demo.html` for a demo
 
 ## Recommended [kitty](https://github.com/kovidgoyal/kitty) settings
 ```
-font_family KleeOneMonospace
+font_family KokubanMonospace
 font_size 16
 
 modify_font cell_width 100%
@@ -36,12 +36,12 @@ text_composition_strategy 3.0 10 # Adjust this based on your display
     - KleeOne-SemiBold.ttf
     - LXGWWenKaiMono-Regular.ttf
     - LXGWWenKaiMono-Bold.ttf
-5. `python klee-monospace.py KleeOne-Regular.ttf LXGWWenKaiMono-Regular.ttf; python klee-monospace.py KleeOne-SemiBold.ttf LXGWWenKaiMono-Bold.ttf`
+5. `python kokuban-monospace.py KleeOne-Regular.ttf LXGWWenKaiMono-Regular.ttf; python kokuban-monospace.py KleeOne-SemiBold.ttf LXGWWenKaiMono-Bold.ttf`
 6. `demo.html`を開いて確認する
 
 ## [kitty](https://github.com/kovidgoyal/kitty)のおすすめの設定
 ```
-font_family KleeOneMonospace
+font_family KokubanMonospace
 font_size 16
 
 modify_font cell_width 100%
