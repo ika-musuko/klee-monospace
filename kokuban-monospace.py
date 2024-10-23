@@ -192,6 +192,9 @@ def make_font_monospace(input_path, lxgw_path, output_path):
     gl = "m"
     hmtx[gl] = (rw, 35)
 
+    gl = "bar"
+    hmtx[gl] = (rw, 200)
+
     gl = "parenleft"
     hmtx[gl] = (rw, 140)
 
